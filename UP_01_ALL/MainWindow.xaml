@@ -1,0 +1,47 @@
+﻿<Window x:Class="UP_01_ALL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UP_01_ALL"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="667" Width="416">
+    <Grid>
+        <Rectangle Canvas.Left="135" Canvas.Top="10" RadiusX="10" RadiusY="10"  Margin="10,10,10,10" Fill="White" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.114"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Canvas>
+            <Rectangle Canvas.Left="79" Canvas.Top="20" Width="250" Height="50" RadiusX="10" RadiusY="10" Fill="#FF76E383" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Rectangle Width="40" Height="40" RadiusX="5" RadiusY="5" Canvas.Top="24" Canvas.Left="92">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="image\logo.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Label Canvas.Top="18" Canvas.Left="147" Content="LabPerm" FontFamily="Comic Sans MS" FontSize="30" Foreground="#FF498C51" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        </Canvas>
+        <Canvas>
+            <Rectangle Canvas.Left="58" Canvas.Top="90" Width="300" Height="317" RadiusX="10" RadiusY="10" Fill="#FF76E383" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label Canvas.Top="146" Canvas.Left="170" Content="Логин" FontFamily="Comic Sans MS" FontSize="15" Foreground="#FF498C51" FontWeight="Bold"/>
+            <TextBox x:Name="textBoxLogin" Canvas.Top="182" Canvas.Left="96" Width="200" Height="25" BorderBrush="#FF76E383" FontFamily="Comic Sans MS" FontSize="15"/>
+            <Label Canvas.Top="223" Canvas.Left="164" Content="Пароль" FontFamily="Comic Sans MS" FontSize="15" Foreground="#FF498C51" FontWeight="Bold"/>
+            <TextBox x:Name="textBoxPassword" Canvas.Top="259" Canvas.Left="96" Width="200" Height="25" BorderBrush="#FF76E383" FontFamily="Comic Sans MS" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Center" TextChanged="textBoxPassword_TextChanged"/>
+            <Button x:Name="BtnMAska" Canvas.Top="259" Canvas.Left="301" Content="*" Width="25" Height="25" FontFamily="Comic Sans MS" FontSize="18" Foreground="#FF498C51" BorderBrush="#FF76E383" Background="White"  HorizontalAlignment="Left" VerticalAlignment="Top" Click="BtnMAska_Click"/>
+            <Button x:Name="Entrance" Canvas.Top="324" Canvas.Left="120" Content="Вход" Width="152" Height="24" FontFamily="Comic Sans MS" FontSize="15" Foreground="#FF498C51" Background="White" BorderBrush="#FF76E383" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Entrance_Click"/>
+            <PasswordBox Canvas.Left="96" Canvas.Top="260" Width="200" x:Name="paswordPB" HorizontalAlignment="Left" VerticalAlignment="Center" Height="24" Visibility="Collapsed" TextInput="paswordPB_TextInput"/>
+        </Canvas>
+        <Canvas>
+            <Rectangle x:Name="RectangleCaptcha" Canvas.Left="58" Canvas.Top="426" Width="300" Height="166" RadiusX="10" RadiusY="10" Fill="#FF76E383" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Hidden"/>
+            <Image x:Name="CaptchaImage" Canvas.Top="441" Canvas.Left="100" Width="202" Height="50" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.506,0.569" Visibility="Hidden"/>
+            <TextBox x:Name="textBoxCaptcha" Canvas.Top="527" Canvas.Left="100" Width="203" Height="25" BorderBrush="#FF76E383" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Hidden"/>
+            <Button x:Name="BtnUpdateCaptcha" Canvas.Top="557" Canvas.Left="125" Content="Обновить капчу" Width="150" Height="25" FontFamily="Comic Sans MS" FontSize="15" Foreground="#FF498C51" Background="White " BorderBrush="#FF76E383" FontWeight="Bold"  Visibility="Hidden" />
+            <Label x:Name="C" Content="Label" Canvas.Left="181" Canvas.Top="496" Visibility="Hidden"/>
+        </Canvas>
+    </Grid>
+</Window>
