@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ca902b3b37054080861290aa78674023" Name="Diagram1" ZoomLevel="34">
+        <EntityTypeShape EntityType="labPermModel.Analyzer" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="labPermModel.AnalyzerOperation" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="labPermModel.AttemptStatus" Width="1.5" PointX="13.5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="labPermModel.Biomaterial" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="labPermModel.InsuranceCompany" Width="1.5" PointX="2.875" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="labPermModel.LoginHistory" Width="1.5" PointX="10.375" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="labPermModel.Order" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="labPermModel.OrderList" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="labPermModel.OrderStatus" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="labPermModel.Patient" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="labPermModel.PolicyType" Width="1.5" PointX="3.5" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="labPermModel.Positions" Width="1.5" PointX="13.125" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="labPermModel.RenderingOfServisec" Width="1.5" PointX="8.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="labPermModel.Services" Width="1.5" PointX="11" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="labPermModel.ServiceStatus" Width="1.5" PointX="5.125" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="labPermModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="labPermModel.Users" Width="1.5" PointX="7.625" PointY="9.875" IsExpanded="true" />
+        <AssociationConnector Association="labPermModel.FK_Analyzer_Biomaterial" ManuallyRouted="false" />
+        <AssociationConnector Association="labPermModel.FK_AnalyzerOperation_Analyzer" ManuallyRouted="false" />
+        <AssociationConnector Association="labPermModel.FK_RenderingOfServisec_Analyzer" ManuallyRouted="false" />
+        <AssociationConnector Association="labPermModel.FK_AnalyzerOperation_OrderList" ManuallyRouted="false" />
+        <AssociationConnector Association="labPermModel.FK_LoginHistory_AttemptStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="labPermModel.FK_Order_Biomaterial" ManuallyRouted="false" />
+        <AssociationConnector Association="labPermModel.FK_Patient_InsuranceCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="labPermModel.FK_LoginHistory_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="labPermModel.FK_Order_OrderStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="labPermModel.FK_Order_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="labPermModel.FK_Order_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="labPermModel.FK_OrderList_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="labPermModel.FK_OrderList_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="labPermModel.FK_OrderList_ServiceStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="labPermModel.FK_Patient_PolicyType" ManuallyRouted="false" />
+        <AssociationConnector Association="labPermModel.FK_Users_Positions" ManuallyRouted="false" />
+        <AssociationConnector Association="labPermModel.FK_RenderingOfServisec_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="labPermModel.FK_RenderingOfServisec_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

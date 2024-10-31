@@ -1,0 +1,39 @@
+﻿<Window x:Class="UP_01_ALL.Accountant"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UP_01_ALL"
+        mc:Ignorable="d"
+        Title="Accountant" Height="502" Width="638">
+    <Grid Margin="0,0,10,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="541*"/>
+            <ColumnDefinition Width="87*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle RadiusX="10" RadiusY="10"  Margin="10,10,10,10" Fill="White" Grid.ColumnSpan="2"/>
+        <Canvas Grid.ColumnSpan="2">
+            <Label x:Name="FIOLabel"  FontFamily = "Comic Sans MS" FontSize = "30" Foreground = "#FF498C51" Canvas.Top = "120" Canvas.Left = "240" />
+            <Rectangle Canvas.Left="220" Canvas.Top="19" Width="190" Height="50" RadiusX="10" RadiusY="10" Fill="#FF76E383" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Rectangle Canvas.Left="96" Canvas.Top="391" Fill="#FF76E383" Width="241" Height="50" RadiusX="10" RadiusY="10" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="TimerLabel" Canvas.Left="196" Canvas.Top="401" Content="time" FontFamily="Comic Sans MS" FontSize="15" FontWeight="Bold" Foreground="#FF498C51" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label Canvas.Top="18" Canvas.Left="237" Content="Бухгалтер" FontFamily="Comic Sans MS" FontSize="30" Foreground="#FF498C51" />
+            <Button x:Name="BtnExit" Content="Выход" Canvas.Top="391" Canvas.Left="428" Width="100" Height="50" FontFamily="Comic Sans MS" FontSize="18" FontWeight="Bold" Foreground="#FF498C51" Background="#FF76E383" BorderBrush="#FF498C51" Click="BtnExit_Click"/>
+        </Canvas>
+        <Canvas Grid.ColumnSpan="2">
+
+            <Rectangle Canvas.Left="90" Canvas.Top="84" Width="440" Height="148" RadiusX="10" RadiusY="10" Fill="#FF76E383" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Rectangle Canvas.Left="114" Canvas.Top="98" Width="100" Height="120" RadiusX="10" RadiusY="10" Fill="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Rectangle Canvas.Left="114" Canvas.Top="98" Width="100" Height="120" RadiusX="10" RadiusY="10" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.76,0.48">
+                <Rectangle.Fill>
+                    <ImageBrush x:Name="Image" ImageSource="image\бухгалтер.jpeg"/>
+                </Rectangle.Fill>
+            </Rectangle>
+        </Canvas>
+        <Canvas Grid.ColumnSpan="2" >
+            <Rectangle Canvas.Left="84" Canvas.Top="244" Width="450" Height="127" RadiusX="10" RadiusY="10" Fill="#FF76E383" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Button x:Name="BtnViewReport" Content="Просмотреть отчеты" Canvas.Top="253" Canvas.Left="104" Width="410" Height="50" FontFamily="Comic Sans MS" FontSize="16" FontWeight="Bold" Foreground="#FF76E383" Background="White" BorderBrush="White"/>
+            <Button x:Name="BtnCreateInsuranceCompany" Content="Сформировать cчёт страховой компании" Canvas.Top="308" Canvas.Left="104" Width="410" Height="50" FontFamily="Comic Sans MS" FontSize="16" FontWeight="Bold" Foreground="#FF76E383" Background="White" BorderBrush="White"/>
+        </Canvas>
+    </Grid>
+</Window>
